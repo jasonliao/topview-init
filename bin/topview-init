@@ -1,4 +1,4 @@
-#!/usr/bin/env/ node
+#!/usr/bin/env node
 
 var vfs = require('vinyl-fs');
 var fs = require('fs');
