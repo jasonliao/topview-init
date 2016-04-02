@@ -1,0 +1,24 @@
+{
+  "name": "topview-init",
+  "version": "0.0.1",
+  "description": "TopView projects boilerplate generator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L-movingon/topview-init.git"
+  },
+  "author": "Jason Liao <lmovingon2014@gmail.com> (https://github.com/L-movingon)",
+  "license": "MIT",
+  "bin": {
+    "topview-init": "./bin/topview-init"
+  },
+  "dependencies": {
+    "through2": "^2.0.1",
+    "vinyl-fs": "^2.4.2"
+  },
+  "bugs": {
+    "url": "https://github.com/L-movingon/topview-init/issues"
+  }
+}
