@@ -38,7 +38,7 @@ $ npm run build
 with this command, we will
 
 1. Bundle all modules into a `bundle.js` and all stylesheets into a `bundle.css` in `dist` folder with webpack.
-2. Uglity `.js`, minify `.html` and `.css` into `build` folder with gulp.
+2. Uglity `.js`, minify and `.html` into `build` folder with gulp.
 
 ## Attention
 

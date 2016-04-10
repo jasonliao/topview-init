@@ -1,8 +1,8 @@
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 
 var sassLoaders = [
+  'style-loader',
   'css-loader',
   'sass-loader?includePaths[]=' + path.resolve(__dirname, './src')
 ];
@@ -20,7 +20,7 @@ module.exports = {
       loader: 'react-hot!babel'
     }, {
       test: /\.scss$/,
-      loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))
+      loader: sassLoaders.join('!')
     }]
   },
   resolve: {
@@ -37,7 +37,6 @@ module.exports = {
     hot: true
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('bundle.css')
+    new webpack.HotModuleReplacementPlugin()
   ]
 };

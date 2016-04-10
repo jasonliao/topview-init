@@ -1,6 +1,6 @@
 {
   "name": "topview-init",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TopView projects boilerplate generator",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

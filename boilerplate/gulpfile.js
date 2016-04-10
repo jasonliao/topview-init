@@ -15,10 +15,4 @@ gulp.task('html', function () {
     .pipe(gulp.dest('./build'));
 });
 
-gulp.task('css', function () {
-  return gulp.src('./dist/*.css')
-    .pipe(cssmin())
-    .pipe(gulp.dest('./build'));
-});
-
-gulp.task('build', ['javascript', 'html', 'css']);
+gulp.task('build', ['javascript', 'html']);

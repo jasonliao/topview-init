@@ -1,8 +1,8 @@
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 
 var sassLoaders = [
+  'style-loader',
   'css-loader',
   'sass-loader?includePaths[]=' + path.resolve(__dirname, './src')
 ];
@@ -18,7 +18,7 @@ module.exports = {
       loader: 'babel'
     }, {
       test: /\.scss$/,
-      loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))
+      loader: sassLoaders.join('!')
     }]
   },
   resolve: {
@@ -29,8 +29,5 @@ module.exports = {
     path: 'dist',
     publicPath: '/',
     filename: 'bundle.js'
-  },
-  plugins: [
-    new ExtractTextPlugin('bundle.css')
-  ]
+  }
 };
